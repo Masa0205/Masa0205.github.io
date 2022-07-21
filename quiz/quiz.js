@@ -14,7 +14,7 @@ function HTMLRestore()
 {
     document.body.innerHTML = defaultHTML;
 }
-function Hide()
+function kakusi()
 {
     $('#ansbox').hide();
     $('#next').hide();
