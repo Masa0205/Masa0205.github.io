@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Masaru Unno">
+        <title>クイズサイト</title>
+        <link rel="stylesheet" href="./quiz.css" >
+    </head>
+    <body onload="hide(),DefaultSave()">
+        <header>
+            <h1>-----!Quiz Game!-----</h1>
+        </header>
+        <div>
+            <p id="a">このサイトはクイズゲームに挑戦することができます</p>
+        </div>
+        <div id="b">
+            <h2>はじめよう！</h2>
+            <button id="start" type="button" onclick="quiz()">スタート</button>
+        </div>
+        <div id="result">
+            <h3 id="quiznum"></h3>
+            <p id="quiz"></p>
+            <input id="ansbox" type="text" value="回答を入力してください" >
+        </div>
+        <div id="Ans">
+            <p id="ans"></p>
+            <p id="ans2"></p>
+            <button id="next" type="button" onclick="next(qnum)">次の問題へ</button>
+            <button id="end" type="button" onclick="end(p)">結果を見る</button>
+        </div>
+        <div id="d">
+            <h4 id="point"></h4>
+            <p id="10"></p>
+            <button id="return" type="button" onclick="HTMLRestore()">最初に戻る</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+        <script src="./quiz.js"></script>
+    </body>
+        
