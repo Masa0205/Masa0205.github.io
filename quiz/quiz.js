@@ -14,7 +14,7 @@ function HTMLRestore()
 {
     document.body.innerHTML = defaultHTML;
 }
-function hide()
+function Hide()
 {
     $('#ansbox').hide();
     $('#next').hide();
